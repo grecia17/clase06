@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity_main2">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="RESUMEN SERVICIO"
+        android:textColor="#0F49DD"
+        android:textColorLink="#D13838"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Cliente:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvDni"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/tvDni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DNI:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvServicio"
+        app:layout_constraintTop_toBottomOf="@+id/tvCliente" />
+
+    <TextView
+        android:id="@+id/tvServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Servicio:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCostoServicio"
+        app:layout_constraintTop_toBottomOf="@+id/tvDni" />
+
+    <TextView
+        android:id="@+id/tvCostoServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Costo Servicio:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCostoInstalacion"
+        app:layout_constraintTop_toBottomOf="@+id/tvServicio" />
+
+    <TextView
+        android:id="@+id/tvCostoInstalacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Costo Instalacion:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvDescuento"
+        app:layout_constraintTop_toBottomOf="@+id/tvCostoServicio" />
+
+    <TextView
+        android:id="@+id/tvDescuento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Descuento"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalPagar"
+        app:layout_constraintTop_toBottomOf="@+id/tvCostoInstalacion" />
+
+    <TextView
+        android:id="@+id/tvTotalPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Total Pagar:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescuento" />
+</androidx.constraintlayout.widget.ConstraintLayout>
